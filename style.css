@@ -26,7 +26,20 @@ h1 {
   font-size: 2rem;
   font-style: italic;
   font-weight: 500;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   margin-bottom: 50px;
+}
+@media (max-width: 750px) {
+  header {
+    line-height: 10px;
+  }
+  h1 {
+    font-size: 1.7rem;
+    margin-bottom: auto;
+  }
+  #header-info {
+    font-size: 1.5rem;
+  }
 }
 figure {
   text-align: center;
@@ -51,6 +64,15 @@ img {
   font-family: "Courier New", Courier, monospace;
   font-weight: 600;
 }
+@media (max-width: 1500px) {
+  img {
+    width: 70%;
+  }
+  #img-caption {
+    font-size: 1rem;
+    font-weight: 800;
+  }
+}
 section {
   word-spacing: 7px;
   padding: 0px 15px 25px 10px;
@@ -68,6 +90,15 @@ p {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: rgb(2, 73, 73);
 }
+@media (max-width: 900px) {
+  #synopsis {
+    font-size: 1.5rem;
+    line-height: 30px;
+  }
+  p {
+    font-size: 1rem;
+  }
+}
 footer {
   margin: 0px 15px 25px 10px;
   text-align: center;
@@ -79,4 +110,9 @@ a {
 }
 a:hover {
   text-decoration: underline;
+}
+@media (max-width: 750px) {
+  a {
+    font-size: 2rem;
+  }
 }
